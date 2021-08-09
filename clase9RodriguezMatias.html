@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio clase 9</title>
+</head>
+<body>
+
+
+    <h1>MERCADOLIBRO</h1>
+    <h2>Incorporar eventos</h2>
+    <h4>Hola! Soy MercadoLibro ¿y Tu?</h4>
+    <form id= "formulario">
+        <input type ="text"><br>
+        <!-- <input type ="number"><br> -->
+        <input type ="submit" value="Enviar">
+        
+    </form>
+
+    <button id="btnPrincipal">Tocar aqui</button><br>
+    <script>
+
+        let boton =document.getElementById("btnPrincipal")
+        boton.addEventListener("click", respuestaClick)
+        
+        function respuestaClick(){
+        
+            console.log("respuestas evento");
+            alert("escoge tu libro");
+        }
+     
+    </script>
+    <!-- <input id = "titulo" type= "text">
+    <input id = "precio" type= "number"> -->
+
+    <ul id= "sugerencias" ></ul> 
+
+
+    <script type="text/javascript" src="clase9RodriguezMatias.js"></script>
+</body>
+</html> 
